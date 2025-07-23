@@ -20,4 +20,8 @@
         <Using Include="NUnit.Framework"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MIM.Schema\MIM.Schema.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -5,7 +5,7 @@ namespace MIM.Schema;
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
 [Serializable()]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
-public enum relatiemodelleringtype {
+public enum Relatiemodelleringtype {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("Relatiesoort leidend")]

@@ -8,7 +8,7 @@ namespace MIM.Schema;
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
 [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1", IsNullable=false)]
-public partial class gegevensgroepen {
+public partial class Gegevensgroepen {
     
     private Gegevensgroep[] itemsField;
     

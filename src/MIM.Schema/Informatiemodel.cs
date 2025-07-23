@@ -28,7 +28,7 @@ public partial class Informatiemodel {
     
     private string informatiedomeinField;
     
-    private relatiemodelleringtype relatiemodelleringtypeField;
+    private Relatiemodelleringtype relatiemodelleringtypeField;
     
     private InformatiemodelMIMVersie mIMVersieField;
     
@@ -137,7 +137,7 @@ public partial class Informatiemodel {
     }
     
     /// <remarks/>
-    public relatiemodelleringtype relatiemodelleringtype {
+    public Relatiemodelleringtype relatiemodelleringtype {
         get {
             return this.relatiemodelleringtypeField;
         }

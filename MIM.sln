@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIM.Schema", "src\MIM.Schema\MIM.Schema.csproj", "{1A425BC3-CD3E-47E7-9A3A-2340F8BDC72D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIM.Schema.Tests", "src\MIM.Schema.Tests\MIM.Schema.Tests.csproj", "{E5EDF2CB-7C91-45F1-BD19-1697074C7D56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,6 +14,10 @@ Global
 		{1A425BC3-CD3E-47E7-9A3A-2340F8BDC72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A425BC3-CD3E-47E7-9A3A-2340F8BDC72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A425BC3-CD3E-47E7-9A3A-2340F8BDC72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5EDF2CB-7C91-45F1-BD19-1697074C7D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5EDF2CB-7C91-45F1-BD19-1697074C7D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5EDF2CB-7C91-45F1-BD19-1697074C7D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5EDF2CB-7C91-45F1-BD19-1697074C7D56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

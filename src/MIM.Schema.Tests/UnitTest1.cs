@@ -27,16 +27,33 @@ public class Tests
             MIMTaal = "NL",
             packages = new InformatiemodelPackages
             {
-                
+                Domein =
+                [
+                    new Domein
+                    {
+                        datatypen = new DomeinViewDatatypen
+                        {
+                            Items = [new PrimitiefDatatype()]
+                        },
+                        objecttypen =
+                        [
+                            new Objecttype { constraints = [new Constraint()] }
+                        ],
+                        constructies = [new Constructie()]
+                    }
+                ]
             },
-            kenmerken = [new KenmerkenKenmerk
-            {
-                naam = "Afkorting",
-                Value = "IMFW"
-            }]
+            kenmerken =
+            [
+                new KenmerkenKenmerk
+                {
+                    naam = "Afkorting",
+                    Value = "IMFW"
+                }
+            ]
         };
-        
-        
+
+
         var serializer = new XmlSerializer(typeof(Informatiemodel));
         var ns = new XmlSerializerNamespaces();
         ns.Add("cs", "http://www.imvertor.org/metamodels/conceptualschemas/model/v20181210");
@@ -48,7 +65,7 @@ public class Tests
         ns.Add("xlink", "http://www.w3.org/1999/xlink");
         ns.Add("xs", "http://www.w3.org/2001/XMLSchema");
         ns.Add("xsi", "http://www.w3.org/2001/XMLSchema-instance");
-        
+
         var settings = new XmlWriterSettings
         {
             Indent = true,
@@ -65,12 +82,12 @@ public class Tests
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine(xml);
         }
+
         Assert.Pass();
     }
-    
+
     [Test]
     public void Test2()
     {
-        
     }
 }

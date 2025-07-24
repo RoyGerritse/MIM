@@ -3,21 +3,17 @@ namespace MIM.Schema;
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
-public partial class DatatypeSupertypen {
+public class DatatypeSupertypen {
     
     private GeneralisatieDatatypen generalisatieDatatypenField;
     
     /// <remarks/>
     public GeneralisatieDatatypen GeneralisatieDatatypen {
-        get {
-            return this.generalisatieDatatypenField;
-        }
-        set {
-            this.generalisatieDatatypenField = value;
-        }
+        get => generalisatieDatatypenField;
+        set => generalisatieDatatypenField = value;
     }
 }

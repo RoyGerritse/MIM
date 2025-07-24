@@ -3,11 +3,11 @@ namespace MIM.Schema;
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
-public partial class InformatiemodelPackages {
+public class InformatiemodelPackages {
     
     private Domein[] domeinField;
     
@@ -18,33 +18,21 @@ public partial class InformatiemodelPackages {
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("Domein")]
     public Domein[] Domein {
-        get {
-            return this.domeinField;
-        }
-        set {
-            this.domeinField = value;
-        }
+        get => domeinField;
+        set => domeinField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("View")]
     public View[] View {
-        get {
-            return this.viewField;
-        }
-        set {
-            this.viewField = value;
-        }
+        get => viewField;
+        set => viewField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("Extern")]
     public Extern[] Extern {
-        get {
-            return this.externField;
-        }
-        set {
-            this.externField = value;
-        }
+        get => externField;
+        set => externField = value;
     }
 }

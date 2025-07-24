@@ -8,11 +8,11 @@ namespace MIM.Schema;
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(GestructureerdDatatype))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(PrimitiefDatatype))]
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
-public abstract partial class Datatype {
+public abstract class Datatype {
     
     private DatatypeSupertypen supertypenField;
     
@@ -22,33 +22,21 @@ public abstract partial class Datatype {
     
     /// <remarks/>
     public DatatypeSupertypen supertypen {
-        get {
-            return this.supertypenField;
-        }
-        set {
-            this.supertypenField = value;
-        }
+        get => supertypenField;
+        set => supertypenField = value;
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [System.Xml.Serialization.XmlAttributeAttribute]
     public string id {
-        get {
-            return this.idField;
-        }
-        set {
-            this.idField = value;
-        }
+        get => idField;
+        set => idField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
     public string index {
-        get {
-            return this.indexField;
-        }
-        set {
-            this.indexField = value;
-        }
+        get => indexField;
+        set => indexField = value;
     }
 }

@@ -3,12 +3,12 @@ namespace MIM.Schema;
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
 [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1", IsNullable=false)]
-public partial class GeneralisatieObjecttypen {
+public class GeneralisatieObjecttypen {
     
     private string datumOpnameField;
     
@@ -24,65 +24,41 @@ public partial class GeneralisatieObjecttypen {
     
     /// <remarks/>
     public string datumOpname {
-        get {
-            return this.datumOpnameField;
-        }
-        set {
-            this.datumOpnameField = value;
-        }
+        get => datumOpnameField;
+        set => datumOpnameField = value;
     }
     
     /// <remarks/>
     public string typeSupertype {
-        get {
-            return this.typeSupertypeField;
-        }
-        set {
-            this.typeSupertypeField = value;
-        }
+        get => typeSupertypeField;
+        set => typeSupertypeField = value;
     }
     
     /// <remarks/>
     public GeneralisatieObjecttypenSupertype supertype {
-        get {
-            return this.supertypeField;
-        }
-        set {
-            this.supertypeField = value;
-        }
+        get => supertypeField;
+        set => supertypeField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-ext/1.0")]
     [System.Xml.Serialization.XmlArrayItemAttribute("Kenmerk", IsNullable=false)]
     public KenmerkenKenmerk[] kenmerken {
-        get {
-            return this.kenmerkenField;
-        }
-        set {
-            this.kenmerkenField = value;
-        }
+        get => kenmerkenField;
+        set => kenmerkenField = value;
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [System.Xml.Serialization.XmlAttributeAttribute]
     public string id {
-        get {
-            return this.idField;
-        }
-        set {
-            this.idField = value;
-        }
+        get => idField;
+        set => idField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
     public string index {
-        get {
-            return this.indexField;
-        }
-        set {
-            this.indexField = value;
-        }
+        get => indexField;
+        set => indexField = value;
     }
 }

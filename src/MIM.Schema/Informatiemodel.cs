@@ -3,12 +3,12 @@ namespace MIM.Schema;
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
 [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1", IsNullable=false)]
-public partial class Informatiemodel {
+public class Informatiemodel {
     
     private string naamField;
     
@@ -48,185 +48,113 @@ public partial class Informatiemodel {
     
     /// <remarks/>
     public string naam {
-        get {
-            return this.naamField;
-        }
-        set {
-            this.naamField = value;
-        }
+        get => naamField;
+        set => naamField = value;
     }
     
     /// <remarks/>
     public string alias {
-        get {
-            return this.aliasField;
-        }
-        set {
-            this.aliasField = value;
-        }
+        get => aliasField;
+        set => aliasField = value;
     }
     
     /// <remarks/>
     public string herkomst {
-        get {
-            return this.herkomstField;
-        }
-        set {
-            this.herkomstField = value;
-        }
+        get => herkomstField;
+        set => herkomstField = value;
     }
     
     /// <remarks/>
     public xhtmlText definitie {
-        get {
-            return this.definitieField;
-        }
-        set {
-            this.definitieField = value;
-        }
+        get => definitieField;
+        set => definitieField = value;
     }
     
     /// <remarks/>
     public string herkomstDefinitie {
-        get {
-            return this.herkomstDefinitieField;
-        }
-        set {
-            this.herkomstDefinitieField = value;
-        }
+        get => herkomstDefinitieField;
+        set => herkomstDefinitieField = value;
     }
     
     /// <remarks/>
     public xhtmlText toelichting {
-        get {
-            return this.toelichtingField;
-        }
-        set {
-            this.toelichtingField = value;
-        }
+        get => toelichtingField;
+        set => toelichtingField = value;
     }
     
     /// <remarks/>
     public string datumOpname {
-        get {
-            return this.datumOpnameField;
-        }
-        set {
-            this.datumOpnameField = value;
-        }
+        get => datumOpnameField;
+        set => datumOpnameField = value;
     }
     
     /// <remarks/>
     public string informatiemodeltype {
-        get {
-            return this.informatiemodeltypeField;
-        }
-        set {
-            this.informatiemodeltypeField = value;
-        }
+        get => informatiemodeltypeField;
+        set => informatiemodeltypeField = value;
     }
     
     /// <remarks/>
     public string informatiedomein {
-        get {
-            return this.informatiedomeinField;
-        }
-        set {
-            this.informatiedomeinField = value;
-        }
+        get => informatiedomeinField;
+        set => informatiedomeinField = value;
     }
     
     /// <remarks/>
     public Relatiemodelleringtype relatiemodelleringtype {
-        get {
-            return this.relatiemodelleringtypeField;
-        }
-        set {
-            this.relatiemodelleringtypeField = value;
-        }
+        get => relatiemodelleringtypeField;
+        set => relatiemodelleringtypeField = value;
     }
     
     /// <remarks/>
     public InformatiemodelMIMVersie MIMVersie {
-        get {
-            return this.mIMVersieField;
-        }
-        set {
-            this.mIMVersieField = value;
-        }
+        get => mIMVersieField;
+        set => mIMVersieField = value;
     }
     
     /// <remarks/>
     public string MIMExtensie {
-        get {
-            return this.mIMExtensieField;
-        }
-        set {
-            this.mIMExtensieField = value;
-        }
+        get => mIMExtensieField;
+        set => mIMExtensieField = value;
     }
     
     /// <remarks/>
     public string MIMExtensieVersie {
-        get {
-            return this.mIMExtensieVersieField;
-        }
-        set {
-            this.mIMExtensieVersieField = value;
-        }
+        get => mIMExtensieVersieField;
+        set => mIMExtensieVersieField = value;
     }
     
     /// <remarks/>
     public string MIMTaal {
-        get {
-            return this.mIMTaalField;
-        }
-        set {
-            this.mIMTaalField = value;
-        }
+        get => mIMTaalField;
+        set => mIMTaalField = value;
     }
     
     /// <remarks/>
     public InformatiemodelPackages packages {
-        get {
-            return this.packagesField;
-        }
-        set {
-            this.packagesField = value;
-        }
+        get => packagesField;
+        set => packagesField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-ext/1.0")]
     [System.Xml.Serialization.XmlArrayItemAttribute("Kenmerk", IsNullable=false)]
     public KenmerkenKenmerk[] kenmerken {
-        get {
-            return this.kenmerkenField;
-        }
-        set {
-            this.kenmerkenField = value;
-        }
+        get => kenmerkenField;
+        set => kenmerkenField = value;
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [System.Xml.Serialization.XmlAttributeAttribute]
     public string id {
-        get {
-            return this.idField;
-        }
-        set {
-            this.idField = value;
-        }
+        get => idField;
+        set => idField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
     public string index {
-        get {
-            return this.indexField;
-        }
-        set {
-            this.indexField = value;
-        }
+        get => indexField;
+        set => indexField = value;
     }
 }

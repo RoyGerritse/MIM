@@ -3,12 +3,12 @@ namespace MIM.Schema;
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.geostandaarden.nl/mim/mim-ext/1.0")]
 [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-ext/1.0", IsNullable=false)]
-public partial class Constructie {
+public class Constructie {
     
     private string constructietypeField;
     
@@ -20,44 +20,28 @@ public partial class Constructie {
     
     /// <remarks/>
     public string constructietype {
-        get {
-            return this.constructietypeField;
-        }
-        set {
-            this.constructietypeField = value;
-        }
+        get => constructietypeField;
+        set => constructietypeField = value;
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAnyElementAttribute()]
+    [System.Xml.Serialization.XmlAnyElementAttribute]
     public System.Xml.XmlElement[] Any {
-        get {
-            return this.anyField;
-        }
-        set {
-            this.anyField = value;
-        }
+        get => anyField;
+        set => anyField = value;
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [System.Xml.Serialization.XmlAttributeAttribute]
     public string id {
-        get {
-            return this.idField;
-        }
-        set {
-            this.idField = value;
-        }
+        get => idField;
+        set => idField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
     public string index {
-        get {
-            return this.indexField;
-        }
-        set {
-            this.indexField = value;
-        }
+        get => indexField;
+        set => indexField = value;
     }
 }

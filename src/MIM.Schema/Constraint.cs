@@ -3,12 +3,12 @@ namespace MIM.Schema;
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
 [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1", IsNullable=false)]
-public partial class Constraint {
+public class Constraint {
     
     private string naamField;
     
@@ -20,43 +20,27 @@ public partial class Constraint {
     
     /// <remarks/>
     public string naam {
-        get {
-            return this.naamField;
-        }
-        set {
-            this.naamField = value;
-        }
+        get => naamField;
+        set => naamField = value;
     }
     
     /// <remarks/>
     public string specificatieTekst {
-        get {
-            return this.specificatieTekstField;
-        }
-        set {
-            this.specificatieTekstField = value;
-        }
+        get => specificatieTekstField;
+        set => specificatieTekstField = value;
     }
     
     /// <remarks/>
     public string specificatieFormeel {
-        get {
-            return this.specificatieFormeelField;
-        }
-        set {
-            this.specificatieFormeelField = value;
-        }
+        get => specificatieFormeelField;
+        set => specificatieFormeelField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-ext/1.0")]
     [System.Xml.Serialization.XmlArrayItemAttribute("Kenmerk", IsNullable=false)]
     public KenmerkenKenmerk[] kenmerken {
-        get {
-            return this.kenmerkenField;
-        }
-        set {
-            this.kenmerkenField = value;
-        }
+        get => kenmerkenField;
+        set => kenmerkenField = value;
     }
 }

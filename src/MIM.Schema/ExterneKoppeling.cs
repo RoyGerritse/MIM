@@ -3,12 +3,12 @@ namespace MIM.Schema;
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
 [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1", IsNullable=false)]
-public partial class ExterneKoppeling {
+public class ExterneKoppeling {
     
     private string naamField;
     
@@ -32,106 +32,66 @@ public partial class ExterneKoppeling {
     
     /// <remarks/>
     public string naam {
-        get {
-            return this.naamField;
-        }
-        set {
-            this.naamField = value;
-        }
+        get => naamField;
+        set => naamField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("begrip")]
     public string[] begrip {
-        get {
-            return this.begripField;
-        }
-        set {
-            this.begripField = value;
-        }
+        get => begripField;
+        set => begripField = value;
     }
     
     /// <remarks/>
     public string alias {
-        get {
-            return this.aliasField;
-        }
-        set {
-            this.aliasField = value;
-        }
+        get => aliasField;
+        set => aliasField = value;
     }
     
     /// <remarks/>
     public string datumOpname {
-        get {
-            return this.datumOpnameField;
-        }
-        set {
-            this.datumOpnameField = value;
-        }
+        get => datumOpnameField;
+        set => datumOpnameField = value;
     }
     
     /// <remarks/>
     public string unidirectioneel {
-        get {
-            return this.unidirectioneelField;
-        }
-        set {
-            this.unidirectioneelField = value;
-        }
+        get => unidirectioneelField;
+        set => unidirectioneelField = value;
     }
     
     /// <remarks/>
     public Aggregatietype aggregatietype {
-        get {
-            return this.aggregatietypeField;
-        }
-        set {
-            this.aggregatietypeField = value;
-        }
+        get => aggregatietypeField;
+        set => aggregatietypeField = value;
     }
     
     /// <remarks/>
     public ExterneKoppelingDoel doel {
-        get {
-            return this.doelField;
-        }
-        set {
-            this.doelField = value;
-        }
+        get => doelField;
+        set => doelField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-ext/1.0")]
     [System.Xml.Serialization.XmlArrayItemAttribute("Kenmerk", IsNullable=false)]
     public KenmerkenKenmerk[] kenmerken {
-        get {
-            return this.kenmerkenField;
-        }
-        set {
-            this.kenmerkenField = value;
-        }
+        get => kenmerkenField;
+        set => kenmerkenField = value;
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [System.Xml.Serialization.XmlAttributeAttribute]
     public string id {
-        get {
-            return this.idField;
-        }
-        set {
-            this.idField = value;
-        }
+        get => idField;
+        set => idField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
     public string index {
-        get {
-            return this.indexField;
-        }
-        set {
-            this.indexField = value;
-        }
+        get => indexField;
+        set => indexField = value;
     }
 }

@@ -3,22 +3,18 @@ namespace MIM.Schema;
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
-public partial class KeuzeKeuzeAttributen {
+public class KeuzeKeuzeAttributen {
     
     private Attribuutsoort[] attribuutsoortField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("Attribuutsoort")]
     public Attribuutsoort[] Attribuutsoort {
-        get {
-            return this.attribuutsoortField;
-        }
-        set {
-            this.attribuutsoortField = value;
-        }
+        get => attribuutsoortField;
+        set => attribuutsoortField = value;
     }
 }

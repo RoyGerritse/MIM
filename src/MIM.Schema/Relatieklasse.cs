@@ -3,12 +3,12 @@ namespace MIM.Schema;
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.9032.0")]
-[Serializable()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+[Serializable]
+[System.Diagnostics.DebuggerStepThroughAttribute]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1")]
 [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-core/1.1", IsNullable=false)]
-public partial class Relatieklasse {
+public class Relatieklasse {
     
     private string naamField;
     
@@ -56,230 +56,142 @@ public partial class Relatieklasse {
     
     /// <remarks/>
     public string naam {
-        get {
-            return this.naamField;
-        }
-        set {
-            this.naamField = value;
-        }
+        get => naamField;
+        set => naamField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("begrip")]
     public string[] begrip {
-        get {
-            return this.begripField;
-        }
-        set {
-            this.begripField = value;
-        }
+        get => begripField;
+        set => begripField = value;
     }
     
     /// <remarks/>
     public string alias {
-        get {
-            return this.aliasField;
-        }
-        set {
-            this.aliasField = value;
-        }
+        get => aliasField;
+        set => aliasField = value;
     }
     
     /// <remarks/>
     public string herkomst {
-        get {
-            return this.herkomstField;
-        }
-        set {
-            this.herkomstField = value;
-        }
+        get => herkomstField;
+        set => herkomstField = value;
     }
     
     /// <remarks/>
     public xhtmlText definitie {
-        get {
-            return this.definitieField;
-        }
-        set {
-            this.definitieField = value;
-        }
+        get => definitieField;
+        set => definitieField = value;
     }
     
     /// <remarks/>
     public string herkomstDefinitie {
-        get {
-            return this.herkomstDefinitieField;
-        }
-        set {
-            this.herkomstDefinitieField = value;
-        }
+        get => herkomstDefinitieField;
+        set => herkomstDefinitieField = value;
     }
     
     /// <remarks/>
     public xhtmlText toelichting {
-        get {
-            return this.toelichtingField;
-        }
-        set {
-            this.toelichtingField = value;
-        }
+        get => toelichtingField;
+        set => toelichtingField = value;
     }
     
     /// <remarks/>
     public string datumOpname {
-        get {
-            return this.datumOpnameField;
-        }
-        set {
-            this.datumOpnameField = value;
-        }
+        get => datumOpnameField;
+        set => datumOpnameField = value;
     }
     
     /// <remarks/>
     public bool indicatieMaterieleHistorie {
-        get {
-            return this.indicatieMaterieleHistorieField;
-        }
-        set {
-            this.indicatieMaterieleHistorieField = value;
-        }
+        get => indicatieMaterieleHistorieField;
+        set => indicatieMaterieleHistorieField = value;
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [System.Xml.Serialization.XmlIgnoreAttribute]
     public bool indicatieMaterieleHistorieSpecified {
-        get {
-            return this.indicatieMaterieleHistorieFieldSpecified;
-        }
-        set {
-            this.indicatieMaterieleHistorieFieldSpecified = value;
-        }
+        get => indicatieMaterieleHistorieFieldSpecified;
+        set => indicatieMaterieleHistorieFieldSpecified = value;
     }
     
     /// <remarks/>
     public bool indicatieFormeleHistorie {
-        get {
-            return this.indicatieFormeleHistorieField;
-        }
-        set {
-            this.indicatieFormeleHistorieField = value;
-        }
+        get => indicatieFormeleHistorieField;
+        set => indicatieFormeleHistorieField = value;
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [System.Xml.Serialization.XmlIgnoreAttribute]
     public bool indicatieFormeleHistorieSpecified {
-        get {
-            return this.indicatieFormeleHistorieFieldSpecified;
-        }
-        set {
-            this.indicatieFormeleHistorieFieldSpecified = value;
-        }
+        get => indicatieFormeleHistorieFieldSpecified;
+        set => indicatieFormeleHistorieFieldSpecified = value;
     }
     
     /// <remarks/>
     public string kardinaliteit {
-        get {
-            return this.kardinaliteitField;
-        }
-        set {
-            this.kardinaliteitField = value;
-        }
+        get => kardinaliteitField;
+        set => kardinaliteitField = value;
     }
     
     /// <remarks/>
     public string authentiek {
-        get {
-            return this.authentiekField;
-        }
-        set {
-            this.authentiekField = value;
-        }
+        get => authentiekField;
+        set => authentiekField = value;
     }
     
     /// <remarks/>
     public bool indicatieAfleidbaar {
-        get {
-            return this.indicatieAfleidbaarField;
-        }
-        set {
-            this.indicatieAfleidbaarField = value;
-        }
+        get => indicatieAfleidbaarField;
+        set => indicatieAfleidbaarField = value;
     }
     
     /// <remarks/>
     public bool mogelijkGeenWaarde {
-        get {
-            return this.mogelijkGeenWaardeField;
-        }
-        set {
-            this.mogelijkGeenWaardeField = value;
-        }
+        get => mogelijkGeenWaardeField;
+        set => mogelijkGeenWaardeField = value;
     }
     
     /// <remarks/>
     public RelatieklasseAggregatietype aggregatietype {
-        get {
-            return this.aggregatietypeField;
-        }
-        set {
-            this.aggregatietypeField = value;
-        }
+        get => aggregatietypeField;
+        set => aggregatietypeField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
     public Attribuutsoort[] attribuutsoorten {
-        get {
-            return this.attribuutsoortenField;
-        }
-        set {
-            this.attribuutsoortenField = value;
-        }
+        get => attribuutsoortenField;
+        set => attribuutsoortenField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
     public Constraint[] constraints {
-        get {
-            return this.constraintsField;
-        }
-        set {
-            this.constraintsField = value;
-        }
+        get => constraintsField;
+        set => constraintsField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlArrayAttribute(Namespace="http://www.geostandaarden.nl/mim/mim-ext/1.0")]
     [System.Xml.Serialization.XmlArrayItemAttribute("Kenmerk", IsNullable=false)]
     public KenmerkenKenmerk[] kenmerken {
-        get {
-            return this.kenmerkenField;
-        }
-        set {
-            this.kenmerkenField = value;
-        }
+        get => kenmerkenField;
+        set => kenmerkenField = value;
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [System.Xml.Serialization.XmlAttributeAttribute]
     public string id {
-        get {
-            return this.idField;
-        }
-        set {
-            this.idField = value;
-        }
+        get => idField;
+        set => idField = value;
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
     public string index {
-        get {
-            return this.indexField;
-        }
-        set {
-            this.indexField = value;
-        }
+        get => indexField;
+        set => indexField = value;
     }
 }

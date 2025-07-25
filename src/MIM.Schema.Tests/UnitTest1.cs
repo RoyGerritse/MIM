@@ -39,7 +39,20 @@ public class Tests
                         [
                             new Objecttype { constraints = [new Constraint()] }
                         ],
-                        constructies = [new Constructie()]
+                        constructies =
+                        [
+                            new Constructie()
+                        ],
+                        gegevensgroeptypen =
+                        [
+                            new Gegevensgroeptype
+                            {
+                                gegevensgroepen = [
+                                new Gegevensgroep
+                                {
+                                }]
+                            }
+                        ]
                     }
                 ]
             },
